@@ -1,12 +1,10 @@
-let circle = document.querySelector('#circle')
-let selection_circle = document.querySelector('#colors div')
+
+// let selection_circle = document.querySelector('#colors div')
 let img_show;
 
 /* Mudar cor do Iphone */
 function clicar(color) {
-  img_show = document.querySelector('#main-img .show') 
-  circle.style.background = color
-  circle.style.transition = '.4s'
+  img_show = document.querySelector('#main-img div.show') 
   img_show.classList.remove('show')
  
 
