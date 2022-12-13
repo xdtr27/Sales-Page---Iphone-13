@@ -5,9 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IPhone 13</title>
+    
+    <!--------------- CSS ------------------->
     <link rel="stylesheet" href="./style.css">
+    <!----------------- JS ---------------------->
     <script src="./main.js" defer></script>
+    <!----------------FAVICON--------------------->
     <link rel="shortcut icon" href="./Assets/favicon.ico" type="image/x-icon">
+    <!-------------------ICONS-------------------->
+    <link rel="stylesheet" href="./Assets/icons/css/all.css">
 </head>
 <body>
   <header>
@@ -22,10 +28,25 @@
         <li><a href="#">Só na Apple</a></li>
         <li><a href="#">Suporte</a></li>
       </ul>
+      <div onclick="show_menu()" id="icon_menu" class="icon-header show"><i class="fa-solid fa-bars"></i></div>
+      <div onclick="show_menu()" id="icon_close" class="icon-header"><i class="fa-solid fa-xmark"></i></div>
     </nav>
+    
   </header> 
   <main>
-    <section id="main-title">
+    <section id="mobile_links">
+      <ul>
+        <li><a href="#">Mac</a></li>
+        <li><a href="#">Ipad</a></li>
+        <li><a href="#">Iphone</a></li>
+        <li><a href="#">Watch</a></li>
+        <li><a href="#">AirPods</a></li>
+        <li><a href="#">Só na Apple</a></li>
+        <li><a href="#">Suporte</a></li>
+      </ul>
+    </section>
+    <section id="all-main">
+      <section id="main-title">
         <div id="img-title">
           <img src="./Assets/iphone13.png" alt="Logo Iphone 13">  
         </div>
@@ -52,15 +73,15 @@
             <div id="red"   onclick='clicar("#ae0617")'></div>
           </div>
         </section>
-    </section>
-    <section id="main-img">
-      <img src="./Assets/green.png" alt="Iphone Verde" id="img-verde" class="show">
-      <img src="./Assets/pink.png" alt="Iphone Rosa" id="img-rosa">
-      <img src="./Assets/blue.png" alt="Iphone Azul" id="img-azul">
-      <img src="./Assets/black.png" alt="Iphone Preto" id="img-preto">
-      <img src="./Assets/white.png" alt="Iphone Branco" id="img-branco">
-      <img src="./Assets/red.png" alt="Iphone Vermelho" id="img-vermelho">
-      <div id="circle"></div>
+      </section>
+      <section id="main-img">
+        <div id="img-verde"  class="show" ><img src="./Assets/green.png" alt="Iphone Verde"></div>
+        <div id="img-rosa"><img src="./Assets/pink.png" alt="Iphone Rosa"></div>
+        <div id="img-azul"><img src="./Assets/blue.png" alt="Iphone Azul"></div>
+        <div id="img-preto"><img src="./Assets/black.png" alt="Iphone Preto"></div>
+        <div id="img-branco"><img src="./Assets/white.png" alt="Iphone Branco"></div>
+        <div id="img-vermelho"><img src="./Assets/red.png" alt="Iphone Vermelho"></div>
+      </section>
     </section>
   </main>   
 </body>

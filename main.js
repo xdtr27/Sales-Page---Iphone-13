@@ -2,13 +2,7 @@ let circle = document.querySelector('#circle')
 let selection_circle = document.querySelector('#colors div')
 let img_show;
 
-let green = document.querySelector('#green')
-
-// green.addEventListener('click', clicar)
-// function clicar(event) {
-//     console.log(event)
-// }
-
+/* Mudar cor do Iphone */
 function clicar(color) {
   img_show = document.querySelector('#main-img .show') 
   circle.style.background = color
@@ -42,4 +36,15 @@ function clicar(color) {
       break;
 
   }
+}
+
+/* header menu mobile */
+
+function show_menu() {
+  document.querySelector('#icon_menu').classList.toggle('show')
+  document.querySelector('#icon_close').classList.toggle('show')
+  // document.querySelector('main div').classList.toggle('show')
+  document.querySelector('#mobile_links').classList.toggle('show')
+  document.querySelector('#all-main').classList.toggle('hide')
+  
 }
