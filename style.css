@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+html {
+    overflow: hidden;
+}
+body {
+    background-color: #e8e6e7;
+}
+/*===== HEADER ========*/
+
+nav {
+  display: flex;
+  padding: 1rem 2.5rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1d1d1f;
+}
+nav img {
+    height: 30px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 3.75rem;
+  
+  
+}
+nav ul li {
+    position: relative;
+}
+nav ul li a{
+    font-weight: 500;
+    font-size: .85rem;
+    color: #bebebe;
+    transition: .2s;
+}
+nav ul li a:hover {
+  color: white;
+  transition: .2s;
+}
+
+nav ul li::after {
+    content: "";
+    width: 0%;
+    height: 0px;
+    background-color: #bebebe;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 19px;  
+    transition: .2s;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+    height: 1px;
+    transition: .2s;
+}
+
+/*======== MAIN ==========*/
+main {
+    padding: 8rem 5rem;
+
+
+}
+#img-title img {
+    height: 30px;
+}
+#phrase-title {
+    margin: 2rem 0;
+    font-size: 1.8rem;
+}
+#main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+#main p {
+    font-size: 14px;
+}
+#button {
+    background-color: #0271e5;
+    width: fit-content;
+    padding: .6rem 1.5rem;
+    border-radius: 2rem;
+    transition: .2s;
+    cursor: pointer;
+}
+#button:hover {
+    background-color: #428edf;
+    transition: .2s;
+
+}
+#button a {
+    color: white;
+    font-weight: bold;
+}
+
+/* ===== main img ===== */
+#main-img {
+    position: absolute;
+    top: 150px;
+    right: 200px;
+
+}
+#main-img img {
+    width: 350px;
+    transform: rotate(-7deg); 
+    position: relative;
+    top: -20px;
+    display: none;
+}
+#main-img img.show {
+    display: block;
+}
+
+#circle {
+  height: 1000px;
+  width: 1000px;
+  background-color: #617c5f;
+  border-radius: 100%;
+  position: absolute;
+  display: flex;
+  z-index: -1;
+  top: 0px;
+}
+#colors {
+    display: flex;
+    gap: .9rem;
+}
+#colors div  {
+    height: 26px;
+    width: 26px;
+    border-radius: 100%;
+    box-shadow: 1px 2px 2px rgb(189, 187, 187);
+    cursor: pointer;
+}
+
+#green{
+    background: #384937;
+}
+#pink{
+    background: #f8ddd6;
+}
+#blue{
+    background: #225f7e;
+}
+#black{
+    background: #192028;
+}
+#white{
+    background: #f7f2ee;
+}
+#red{
+    background: #ae0617;
+}
+
+span {
+    color: rgb(78, 78, 78);
+}
+
+
