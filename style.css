@@ -7,7 +7,9 @@
   font-family: sans-serif;
   scroll-behavior: smooth;
 }
-
+html {
+  overflow-y:hidden;
+}
 body {
     background-color: #e8e6e7;
 }
@@ -180,6 +182,11 @@ span {
 /* ============== MOBILE =========== */
 
 @media (max-width: 800px) {
+  html {
+    overflow-y: scroll;
+  }
+  
+  
   nav {
     padding: 1rem 1.5rem;
   }
